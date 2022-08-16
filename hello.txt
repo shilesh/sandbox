@@ -1,2 +1,2 @@
-hi i am jaikishan
-i have added a new text file
+Updating the hello.txt file
+hi, this is sneha
