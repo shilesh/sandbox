@@ -1,2 +1,2 @@
-Updating the hello.txt file
-hi, this is sneha
+hi i am sneha 
+modified the hello file.
