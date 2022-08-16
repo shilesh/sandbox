@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.column{
+    float:left;
+    width: 25%;
+    padding :0 10px;
+   
+}
+.row{
+    margin: 0 60px;
+    
+    
+}
+.row:after
+{
+    content: " ";
+    display:table;
+    clear:both;
+    
+    
+
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+   
+    
+    
+  }
+}
+
+.card {
+  float: left;
+    box-shadow: 0 0.1px 8px 0 rgba(0, 0, 0.5, 2), 0 2px 2px 0 rgba(0, 0, 0, 15);
+  padding: 0px 0px;
+  text-align: center;
+  margin-left:50%;
+  margin-top:50%;
+  background-color:#15202b;
+  color: white;
+  transition: transform .2s;
+  
+
+}
+.card1{
+  float: left;
+  box-shadow: 0 0.1px 8px 0 rgba(0, 0, 0.5, 2), 0 2px 2px 0 rgba(0, 0, 0, 15);
+  padding: 0px 0px;
+  margin-top:50%;
+  text-align: center;
+  margin-left: 65%;
+  background-color: #15202b;
+  color: white;
+  transition: transform .2s;
+}
+.card2{
+  float: left;
+  box-shadow: 0 0.1px 8px 0 rgba(0, 0, 0.5, 2), 0 2px 2px 0 rgba(0, 0, 0, 15);
+  padding: 0px 0px;
+  margin-top:50%;
+  text-align: center;
+  margin-left: 80%;
+  
+  background-color: #15202b;
+  color: white;
+  transition: transform .2s;
+}
+.card3{
+  float: left;
+  box-shadow: 0 0.1px 8px 0 rgba(0, 0, 0.5, 2),0 2px 2px 0 rgba(0, 0, 0, 15);
+  padding: 0px 0px;
+  text-align: center;
+  margin-left: -200%;
+  margin-top: 180%;
+  background-color: #15202b;
+  color: white;
+  transition: transform .2s;
+}
+.card4{
+  float: left;
+    box-shadow: 0 0.1px 8px 0 rgba(0, 0, 15, 2), 0 2px 2px 0 rgba(0, 0, 0, 15);
+  padding: 0px 0px;
+  text-align: center;
+  background-color: #15202b;
+  color: white;
+  margin-left: 230%;
+  margin-top: -102%;
+  transition: transform .2s;
+ 
+}
+
+.fa {font-size:50px;}
+
+
+.card:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #cc8899;
+  transform: scale(1.05);
+  background-color: #060b13;
+}
+.card1:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #cc8899;
+  transform: scale(1.05);
+  background-color: #060b13;
+}
+.card2:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #cc8899;
+  transform: scale(1.05);
+  background-color:  #060b13;
+}
+.card3:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #cc8899;
+  transform: scale(1.05);
+  background-color: #060b13;
+}
+.card4:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #cc8899;
+  transform: scale(1.05);
+  background-color: #060b13;
+}
+.column{
+  background-color: transparent;
+}
+.fixed-header{
+
+top: 0;
+box-shadow: 0 4px 8px 0 #00000080, 0 6px 10px 0 #00000030;
+text-align: center;
+width: 100%;
+height: 11%;
+position: fixed;
+z-index: 2;
+background: #15202b;
+padding: 10px;
+color: #fff;
+font-size: 35px;
+
+}
+
+nav a{
+
+color: #fff;
+text-decoration: none;
+padding: 7px 25px;
+/*font-family: "Audiowide", sans-serif;*/
+ display: inline-block;
+
+}
+
+  .topnav a {
+    margin-right: 3%;
+
+    float: right;
+
+    color: #f2f2f2;
+
+    padding: 7px 100px;
+
+    margin-top: -3.5%;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition: transform .2s;
+
+  }
+  .topnav a:hover {
+
+background-color: #ddd;
+color: black;
+transform:scale(1.05);
+
+}
+
+
+
+.topnav a.active {
+
+background-color: #04AA6D;
+color: white;
+
+}
+
+</style>
+</head>
+
+<body>
+  <div class="fixed-header">
+
+    <nav><a href="#" style="font-family: Audiowide, sans-serif;"><b>Excercises</b></a></nav>
+
+    <nav class="topnav">
+
+    <a href="#profile"><img src="/home/soujanya/Documents/p1.png" width="20" height="20"></a>
+
+    <a href="#contact">Contact</a>
+    <a href="#homepage">Tasks</a>
+    <a href="#homepage">Home</a>
+    </nav>
+
+  </div> 
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <a href="#">
+          <img src="/home/soujanya/Documents/jogging.jpg" width="300" height="350" >
+        </a>
+        <p><i class="run"></i></p>
+        <h4><a href="" style="color:#f1f1f1; text-decoration: none;">Running</a></h4>
+        
+      </div>
+    </div>
+     
+    <div class="column">
+      <div class="card1">
+        <a href="#">
+        <img src="/home/soujanya/Documents/run.jpg" width="300" height="350">
+        </a>
+        <p><i class="jog"></i></p>
+        <h4><a href="" style="color:#f1f1f1; text-decoration: none;">Jogging</a></h4>
+        
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card2">
+        <a href="#">
+        <img src="/home/soujanya/Documents/swim.png" width="300" height="350">
+        </a>
+        <p><i class="swim"></i></p>
+        <h4><a href="" style="color:#f1f1f1; text-decoration: none;">Swimming</a></h4>
+        
+      </div>
+    </div>
+    
+  
+  
+    <div class="column">
+      <div class="card3">
+        <a href="#">
+        <img src="/home/soujanya/Documents/skip.png" width="300" height="350">
+        </a>
+        <p><i class="skip"></i></p>
+        <h4><a href="" style="color:#f1f1f1; text-decoration: none;">Skipping</a></h4>
+       
+      </div>
+    </div>
+    <br>
+    
+    <div class="column">
+      <div class="card4">
+        <a href="#">
+        <img src="/home/soujanya/Documents/cycling.png" width="300" height="350">
+        </a>
+        <p><i class="cycling"></i></p>
+        <h4><a href="" style="color:#f1f1f1; text-decoration: none;">Cycling</a></h4>
+        
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
