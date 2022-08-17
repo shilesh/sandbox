@@ -1,2 +1,3 @@
-HI 
-HELLo
+
+This is the edited text file
+Date: AUG 17
