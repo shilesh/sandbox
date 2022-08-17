@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+  height:100;
+  padding-right:10px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 50%;
+  padding-left: 20px;
+  height:100;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.container{
+    height:200px;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-image: none;
+    padding-bottom:5px
+}
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fakeimg1{
+    width: 250px;
+    height:200px;
+    image-orientation: center;
+    background-color:none;
+    justify-items: center;
+    padding:50px;
+}
+
+/*stop watch css*/
+.stopwatch {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 23px;
+  width: 100%;
+  padding-top: 25px;
+  padding: 10px;
+  margin-right: 10%;
+  background-color:#aaa;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 3%;
+  border-radius:25%;
+  border:2px solid black;
+
+
+  height: 170px;
+  width: 170px;
+
+  border: 2px solid;
+  border-radius: 70%;
+}
+
+.time {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 50;
+  font-size: 30px;
+  padding: 10px;
+  margin-left: 3%;
+
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-content: left;
+
+  width: 187px;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin: 0;
+  outline: none;
+  margin-left: 10%;
+}
+
+#playButton {
+  display: block;
+  color:blueviolet;
+}
+
+#pauseButton {
+  display: none;
+
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2 style="text-align:center">Swimming</h2>
+</div>
+<!--   ***********   LEFT COLUMN  *********         -->
+<div class="run">                              <!-- Running-->
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Without goals, training has no direction</h2>
+      <h5>The miracle isn’t that I finished. The miracle is that I had the courage to start.</h5>
+      <div class="container" style="height:200px;">
+        <img src="swimming.jpg" alt="Snow" style="width:45%;margin-left:25%"></div>
+      <p></p>
+      <p></p>
+    </div>
+
+    <div class="card">
+      <div class="stopwatch" >
+        <h1 style="margin-left: 3%;"><span class="gold"> STOP </span> WATCH</h1>
+        <div class="circle">
+          <span class="time" id="display">00:00:00</span>
+        </div>
+  
+        <div class="controls">
+          <button class="buttonPlay">
+            <img id="playButton" src="icons/play-button.svg" />
+  
+            <img id="pauseButton" src="icons/pause-button.svg" />
+          </button>
+  
+          <button class="buttonReset">
+            <img id="resetButton" src="icons/reset-button.svg" />
+          </button>
+        </div>
+      </div>
+      <input type="button" value="Completed"
+onClick="alert( 'You have successfully completed the task,Congratulations! ' )">
+    </div>
+  </div>
+  <script src="script.js"></script>  
+  <!-- RIGHT COLUMN-->
+  <div class="rightcolumn">
+    <div class="card">                         <!-- ADVANTAGES-->
+      <h2>ADVANTAGES</h2>
+      <div class="fakeimg" style="height:200px;">Swimming is good all round activity because it, builds endurance, muscle strength, cardiovascular fitness.<br/><br/>
+		It helps maintain a healthy weight, healthy heart and lungs, tones muscles and builds strength.<br/><br/>
+		It also helps to reduce the stress levels, body fat levels, anxiety and depression, and also helps to improve posture and coordination.</div>
+     
+    </div>
+
+    <div class="card">                        <!-- STEPS TO BE FOLLOWED-->
+      <h2>STEPS TOWARDS A GOOD SWIMMING HABBIT</h2>
+      <div class="fakeimg" style="height:210px;">Make sure you know how to swim before diving into the water, choose a safe and clean environment.<br/><br/>
+		Warmup and stretch your muscles and joints before entering the water, start with less time inside the water and slowing advance tracking your progress.
+      </div>
+    </div>
+
+    <div class="card">                    <!--   RULES TO BE FOLLOWED     -->
+      <h2>RULES TO BE FOLLOWED</h2>
+      <div class="fakeimg" style="height:200px;">The application needs to be active along the time of your walking.<br/><br/>
+		The images or videos provided must properly display your progress.<br/><br/>
+		Do not press back or try to switch the application orelse the progress willl be lost.
+
+      </div><br>
+     
+                
+    </div>
+</div>
+
+</body>
+</html>
