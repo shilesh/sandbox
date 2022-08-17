@@ -1,8 +1,2 @@
-
-
-
-This is newely added data
-time:15:50
-
-
-
+This is the Demo Repository
+Use this for trying out your codes
